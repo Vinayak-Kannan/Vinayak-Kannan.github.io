@@ -1,9 +1,10 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Lead from "./Components/Lead";
 import NavBar from "./Components/NavBar";
 import Experience from "./Components/Experience";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Lead />
       <Experience />
+      <Projects />
     </div>
   );
 }

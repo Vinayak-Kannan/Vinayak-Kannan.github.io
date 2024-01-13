@@ -14,13 +14,13 @@ const lead_styling: CSSProperties = {
   fontWeight: "bold",
 };
 
-const dotted_connector = {
-  borderStyle: "dotted",
+const wrapper = {
+  minHeight: "100vh",
 };
 
 const Experience = () => {
   return (
-    <div>
+    <div style={wrapper}>
       <div style={lead_styling}>Experience</div>
       <Timeline position="alternate">
         <TimelineItem>

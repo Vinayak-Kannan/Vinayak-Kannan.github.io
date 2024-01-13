@@ -6,6 +6,7 @@ const nav_bar_style: CSSProperties = {
   flexDirection: "row",
   gap: "10px",
   justifyContent: "center",
+  position: "sticky",
 };
 
 const NavBar = () => {
