@@ -3,6 +3,10 @@ import React, { CSSProperties } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
+const wrapper: CSSProperties = {
+  minHeight: "90vh",
+};
+
 const lead_container: CSSProperties = {
   textAlign: "left",
   display: "flex",
@@ -42,29 +46,31 @@ const icon_style: CSSProperties = {
 
 const Lead = () => {
   return (
-    <Grid container spacing={2}>
-      <Grid xs={6}>
-        <div style={lead_container}>
-          <div style={name}>VINAYAK (VIN) KANNAN</div>
-          <div>Machine Learning Engineer @ Columbia</div>
-          <div style={i_am}>
-            I build ML systems / deployed applications that drive tangible,
-            business-backed value
+    <div style={wrapper}>
+      <Grid container spacing={2}>
+        <Grid xs={6}>
+          <div style={lead_container}>
+            <div style={name}>VINAYAK (VIN) KANNAN</div>
+            <div>Machine Learning Engineer @ Columbia</div>
+            <div style={i_am}>
+              I build ML systems / deployed applications that drive tangible,
+              business-backed value
+            </div>
+            <div style={icon_style}>
+              <LinkedInIcon fontSize={"large"} />
+              <EmailIcon fontSize={"large"} />
+            </div>
           </div>
-          <div style={icon_style}>
-            <LinkedInIcon fontSize={"large"} />
-            <EmailIcon fontSize={"large"} />
+        </Grid>
+        <Grid xs={6}>
+          <div style={about_me_style}>
+            {about_me_text.map((text, index) => (
+              <div key={index}>{text}</div>
+            ))}
           </div>
-        </div>
+        </Grid>
       </Grid>
-      <Grid xs={6}>
-        <div style={about_me_style}>
-          {about_me_text.map((text, index) => (
-            <div key={index}>{text}</div>
-          ))}
-        </div>
-      </Grid>
-    </Grid>
+    </div>
   );
 };
 
