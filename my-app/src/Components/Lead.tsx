@@ -112,7 +112,7 @@ const Lead = () => {
     <div style={{ minHeight: "90vh" }}>
       <div style={wrapper}>
         <Grid container spacing={2}>
-          <Grid xs={6}>
+          <Grid sm={6}>
             <div style={lead_container}>
               <div style={name}>VINAYAK (VIN) KANNAN</div>
               <div>Machine Learning Engineer @ Columbia</div>
@@ -148,7 +148,7 @@ const Lead = () => {
               />
             </div>
           </Grid>
-          <Grid xs={6}>
+          <Grid sm={6}>
             <div style={about_me_style} className={"section"}>
               {about_me_text.map((text, index) => (
                 <div key={index}>{text}</div>
