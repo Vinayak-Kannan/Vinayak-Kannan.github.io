@@ -28,7 +28,7 @@ const TimelineContentComponent = ({
   content,
 }: TimelineContentComponentProps) => {
   return (
-    <div>
+    <div className={"section"}>
       <div style={lead_styling}>{title}</div>
       <div style={sub_styling}>{subtitle}</div>
       <div style={sub_sub}>{content}</div>
