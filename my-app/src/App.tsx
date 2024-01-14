@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import { loadSlim } from "tsparticles-slim";
 import Particles from "react-particles";
 import type { Container, Engine } from "tsparticles-engine";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -108,6 +109,7 @@ function App() {
       <Lead />
       <Experience />
       <Projects />
+      <Analytics />
     </div>
   );
 }
