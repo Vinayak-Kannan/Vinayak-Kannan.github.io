@@ -77,6 +77,7 @@ const headshot_style: CSSProperties = {
   borderRadius: "1%",
   border: "1px solid white",
   zIndex: 10,
+  padding: "0px",
 };
 
 const Lead = () => {
@@ -140,7 +141,11 @@ const Lead = () => {
                   sx={{ cursor: "pointer" }}
                 />
               </div>
-              <img src={HeadShot} style={headshot_style} />
+              <img
+                src={HeadShot}
+                className={"section"}
+                style={headshot_style}
+              />
             </div>
           </Grid>
           <Grid xs={6}>
