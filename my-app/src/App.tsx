@@ -61,7 +61,7 @@ function App() {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#FAF9F6",
             },
             links: {
               color: "#ffffff",

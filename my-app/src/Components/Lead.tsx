@@ -15,6 +15,8 @@ import thousand_miles from "../Audio/Thousand Miles.wav";
 // @ts-ignore
 import tonight_tonight from "../Audio/Tonight Tonight.wav";
 // @ts-ignore
+import combined from "../Audio/Combined.wav";
+// @ts-ignore
 import HeadShot from "../Audio/Headshot.jpeg";
 
 const wrapper: CSSProperties = {
@@ -88,28 +90,8 @@ const Lead = () => {
     if (playing) {
       return;
     }
-    setSong("Now Playing: Little Talks - Of Monsters and Men (Jazzified)");
-    let audio = new Audio(little_talks);
-    await audio.play();
-    setOpen(true);
-    await sleep(31000);
-    setSong("Now Playing: Save Dat Money - Lil Dicky (Jazzified)");
-    audio = new Audio(save_dat_money);
-    await audio.play();
-    setOpen(true);
-    await sleep(31000 * 2);
-    setSong("Thousand Miles - Vanessa Carlton (Jazzified)");
-    audio = new Audio(thousand_miles);
-    await audio.play();
-    setOpen(true);
-    await sleep(31000 * 3);
-    setSong("Tonight Tonight - Hot Chelle Rae (Jazzified)");
-    audio = new Audio(tonight_tonight);
-    await audio.play();
-    setOpen(true);
-    await sleep(31000 * 4);
-    setSong("Cool Again - Shoffy (Jazzified)");
-    audio = new Audio(cool_again);
+    setSong("Now Playing: Vin's Deep Learning Jazz");
+    let audio = new Audio(combined);
     await audio.play();
     setOpen(true);
   };
@@ -185,7 +167,7 @@ const Lead = () => {
         </Grid>
         <Snackbar
           open={open}
-          autoHideDuration={25000}
+          autoHideDuration={1000 * 140}
           onClose={handleClose}
           message={song}
         />
