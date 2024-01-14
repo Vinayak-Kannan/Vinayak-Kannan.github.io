@@ -55,6 +55,9 @@ const Experience = () => {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
+            <div>
+              Began my Masters of Computer Science at Columbia University 🦁
+            </div>
             <TimelineContentComponent
               title={"StartProto"}
               subtitle={"Software Engineer"}

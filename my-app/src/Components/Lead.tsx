@@ -90,7 +90,7 @@ const Lead = () => {
     if (playing) {
       return;
     }
-    setSong("Now Playing: Vin's Deep Learning Jazz");
+    setSong("Now Playing: Vin's Deep Learning Jams");
     let audio = new Audio(combined);
     await audio.play();
     setOpen(true);
