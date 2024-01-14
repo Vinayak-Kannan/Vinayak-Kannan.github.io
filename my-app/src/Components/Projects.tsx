@@ -11,7 +11,7 @@ const lead_styling: CSSProperties = {
 
 const Projects = () => {
   return (
-    <div style={wrapper}>
+    <div style={wrapper} id={"project"}>
       <div style={lead_styling}>Projects</div>
     </div>
   );

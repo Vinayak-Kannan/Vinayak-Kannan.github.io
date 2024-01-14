@@ -20,7 +20,7 @@ const wrapper = {
 
 const Experience = () => {
   return (
-    <div style={wrapper}>
+    <div style={wrapper} id={"experience"}>
       <div style={lead_styling}>Experience</div>
       <Timeline position="alternate">
         <TimelineItem>

@@ -8,7 +8,18 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background: radial-gradient(ellipse at center,  #dfd8c5 0%,#FAF9F6 100%);
+  background: radial-gradient(ellipse at center, #9c9889 0%,#FAF9F6 100%);
+}
+
+.section {
+  border-radius: 1%;
+  padding: 20px;
+  border: 0.2px solid rgba(0, 0, 0, 0);
+}
+
+.section:hover {
+  border: 0.2px solid #ffffff;
+  transition: 0.5s;
 }
 
 .App-logo {
