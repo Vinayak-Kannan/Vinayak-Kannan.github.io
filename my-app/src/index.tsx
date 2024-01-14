@@ -5,6 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "typeface-inter";
 
+export const metadata = {
+  title: "Vinayak (Vin) Kannan",
+  description: "My portfolio! Welcome!",
+};
+
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
