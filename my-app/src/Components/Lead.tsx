@@ -40,9 +40,10 @@ const i_am: CSSProperties = {
 };
 
 const about_me_text = [
-  "Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.",
-  "My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.",
-  "When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds",
+  "In 2019, I got the chance to taste Machine Learning through a Marketing Analytics course at The University of Michigan. Ever since, I tumbled head first into technology and have never looked back.",
+  "After graduating from The University of Michigan, I joined McKinsey & Company as a consultant in Cloud / Cybersecurity. After leaving, I developed my own startup, worked as a SWE, and am now pursuing my Masters in Computer Science at Columbia University.",
+  "My main focus these days is research in NLP. In particular, I'm interested in building scalable, performant ML systems.",
+  "When I’m not at the computer, I’m usually playing the piano, working out, or enjoying international cuisine (I used to live in Japan for 4 years, and South Africa for 6 years)!",
 ];
 
 const about_me_style = {
@@ -73,6 +74,7 @@ const headshot_style: CSSProperties = {
   height: "300px",
   borderRadius: "1%",
   border: "1px solid white",
+  zIndex: 10,
 };
 
 const Lead = () => {
@@ -165,13 +167,10 @@ const Lead = () => {
                 <div key={index}>{text}</div>
               ))}
               <div style={piano_style}>
-                I also used to be a competitive pianist. In my free time, I'm
-                exploring methods combining deep learning with music
-              </div>
-              <div style={piano_style}>
-                Click the piano to hear a personalization project I'm working
-                on, where I've transformed some of my favorite songs on Spotify
-                into jazzy cafe piano tunes!
+                In my free time, I'm exploring methods combining deep learning
+                with music. Click the piano to hear a personalization project
+                I'm working on, where I've transformed some of my favorite songs
+                on Spotify into jazzy cafe piano tunes!
               </div>
               <PianoIcon
                 fontSize={"large"}
